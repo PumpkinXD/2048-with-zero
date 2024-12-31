@@ -1,4 +1,8 @@
-target("2048")
+add_requires("cosmocc")
+add_packages("cosmocc")
+set_toolchains("@cosmocc")
+
+target("2048.com")
     set_kind("binary")
     add_files("2048.c")
 
