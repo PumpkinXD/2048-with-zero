@@ -15,3 +15,12 @@
 # IDE
 .idea/
 .vscode/
+
+# Xmake cache
+.xmake/
+build/
+.cache
+
+# MacOS Cache
+.DS_Store
+
