@@ -1,4 +1,13 @@
+
+
+on_load()
+    if((is_host("windows"))and(is_subhost("windows")))then
+        cprint('${bright red}cannot build without any posix compatibility layer\n')
+        os.exit()
+        end
+        
 target("2048")
+
     set_kind("binary")
     add_files("2048.c")
 
